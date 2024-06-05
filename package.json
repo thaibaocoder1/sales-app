@@ -1,0 +1,14 @@
+{
+  "name": "agl-assignment",
+  "version": "1.0.0",
+  "description": "Project is created by thaibaocoder1",
+  "main": "index.js",
+  "scripts": {
+    "styles": "sass sass:assets/css -w"
+  },
+  "author": "baoDeV",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.77.2"
+  }
+}

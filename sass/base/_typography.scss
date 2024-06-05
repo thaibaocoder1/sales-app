@@ -1,0 +1,29 @@
+html {
+  font-size: 62.5%;
+  text-rendering: optimizeLegibility;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Noto Sans JP", sans-serif;
+}
+select,
+input,
+textarea,
+button {
+  font-family: inherit;
+}
+.noto-sans-jp-regular {
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.noto-sans-jp-bold {
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.noto-sans-jp-medium {
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}

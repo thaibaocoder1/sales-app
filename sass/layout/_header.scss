@@ -1,0 +1,149 @@
+@use "../abstracts/variables" as modules;
+@use "../abstracts/mixins" as mixins;
+
+.header {
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__text {
+    color: modules.$text-second-color;
+    font-size: 1.4rem;
+    line-height: 1.43;
+  }
+  &__box {
+    display: flex;
+    align-items: center;
+    gap: 0 1.013rem;
+    &--modify {
+      gap: 0 7px;
+      &:last-child {
+        gap: 0 7.69px;
+      }
+    }
+  }
+  &__wraper {
+    display: flex;
+    gap: 0 26.31px;
+  }
+  &__search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 1.3rem;
+    margin-top: 2rem;
+    padding: 2rem 0;
+    background-color: modules.$bg-primary-color;
+    border-radius: 6rem;
+  }
+  &__group {
+    display: flex;
+    align-items: center;
+    gap: 0 2rem;
+  }
+  &__label {
+    color: modules.$text-primary-color;
+    font-size: 1.6rem;
+    line-height: 1.43;
+  }
+  &__input {
+    position: relative;
+    width: 42.6rem;
+  }
+  &__input-search {
+    height: 5rem;
+    display: block;
+    width: 100%;
+    border-radius: 2.5rem;
+    border: 1px solid modules.$border-input-color;
+    padding: 0 1.5rem 0 4.8rem;
+    &:focus {
+      outline: none;
+    }
+    &::placeholder {
+      color: modules.$placeholder-color;
+    }
+  }
+  &__input-glass {
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    transform: translate(100%, -50%);
+    z-index: 10;
+  }
+  &__bar {
+    background-color: modules.$primary-color;
+    width: 4.5rem;
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 5px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 1rem;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0);
+    transition: all 0.25s linear;
+    font-size: 1.8rem;
+    & span {
+      position: relative;
+      top: -2px;
+    }
+  }
+  // Responsive
+  @include mixins.maxWidth(1023.98px) {
+    &__input {
+      width: 30rem;
+    }
+    &__bar {
+      opacity: 1;
+      visibility: visible;
+      transform: scale(1);
+    }
+  }
+  @include mixins.maxWidth(767.98px) {
+    &__label {
+      display: none;
+    }
+    &__input {
+      width: 25rem;
+    }
+  }
+  @include mixins.maxWidth(479.98px) {
+    &__input {
+      width: 20rem;
+    }
+    &__bar {
+      flex-shrink: 1;
+    }
+  }
+  @include mixins.phoneMaxWidth() {
+    &__search {
+      justify-content: unset;
+      padding: 2rem;
+    }
+    &__bar {
+      flex-shrink: 0;
+    }
+    &__group {
+      width: 18rem;
+    }
+    &__text {
+      font-size: 1.2rem;
+    }
+  }
+}
+.btn {
+  &--submit {
+    min-width: 9.4rem;
+    color: #f8f9fa;
+    font-size: 1.6rem;
+    padding: 1.2rem 0;
+  }
+  @include mixins.phoneMaxWidth() {
+    display: none;
+  }
+}

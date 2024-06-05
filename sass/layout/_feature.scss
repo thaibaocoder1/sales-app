@@ -1,0 +1,28 @@
+@use "../abstracts/variables" as modules;
+@use "../abstracts/mixins" as mixins;
+
+.feature {
+  margin-top: 2.28rem;
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 1.5rem;
+  }
+  &__item {
+    border-radius: 1rem;
+    border: 1px solid modules.$primary-color;
+    padding: 4.2rem;
+    text-align: center;
+    color: modules.$primary-color;
+  }
+  &__description {
+    margin-top: 1.3rem;
+    font-size: 1.8rem;
+    line-height: 1.67;
+  }
+  @include mixins.maxWidth(767.98px) {
+    &__inner {
+      grid-template-columns: 1fr;
+    }
+  }
+}

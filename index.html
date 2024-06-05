@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sales Score - AGL Test</title>
+    <!-- Embed Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Linked Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Linked Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./assets/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Linked Main Style -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <aside class="sidebar col-3">
+          <div class="sidebar__inner">
+            <div class="sidebar__top">
+              <figure class="sidebar__logo">
+                <a href="/">
+                  <img
+                    src="./assets/images/logo.svg"
+                    alt="SALES SCORE"
+                    class="sidebar__image"
+                  />
+                </a>
+              </figure>
+              <button class="btn btn--primary">サポートサイト</button>
+            </div>
+            <nav class="navbar">
+              <ul class="navbar__list">
+                <li class="navbar__item">
+                  <a href="#" class="navbar__link">検査結果画面の解説</a>
+                  <img
+                    src="./assets/icons/fa-solid fa-angle-right.svg"
+                    alt="Icon"
+                    class="navbar__icon"
+                  />
+                </li>
+                <li class="navbar__item">
+                  <a href="#" class="navbar__link">主な機能</a>
+                  <img
+                    src="./assets/icons/fa-solid fa-angle-right.svg"
+                    alt="Icon"
+                    class="navbar__icon"
+                  />
+                </li>
+                <li class="navbar__item">
+                  <a href="#" class="navbar__link">利用シーン別ガイド</a>
+                  <img
+                    src="./assets/icons/fa-solid fa-angle-right.svg"
+                    alt="Icon"
+                    class="navbar__icon"
+                  />
+                </li>
+                <li class="navbar__item">
+                  <a href="#" class="navbar__link">初めてご利用の方へ</a>
+                  <img
+                    src="./assets/icons/fa-solid fa-angle-right.svg"
+                    alt="Icon"
+                    class="navbar__icon"
+                  />
+                </li>
+                <li class="navbar__item">
+                  <a href="#" class="navbar__link">FAQ</a>
+                  <img
+                    src="./assets/icons/fa-solid fa-angle-right.svg"
+                    alt="Icon"
+                    class="navbar__icon"
+                  />
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </aside>
+        <section class="content col-9">
+          <header class="header">
+            <div class="header__inner">
+              <div class="header__box">
+                <img src="./assets/icons/fa-house.svg" alt="Icon" />
+                <span class="header__text noto-sans-jp-regular">トップ</span>
+              </div>
+              <div class="header__wraper">
+                <div class="header__box header__box--modify">
+                  <span class="header__text noto-sans-jp-regular"
+                    >ログイン</span
+                  >
+                  <img
+                    src="./assets/icons/fa-regular fa-envelope.svg"
+                    alt="Icon"
+                  />
+                </div>
+                <div class="header__box header__box--modify">
+                  <span class="header__text noto-sans-jp-regular"
+                    >お問い合わせ</span
+                  >
+                  <img
+                    src="./assets/icons/fa-solid fa-arrow-up-right-from-square.svg"
+                    alt="Icon"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="header__search">
+              <div class="header__bar">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+              <div class="header__group">
+                <label for="search" class="header__label noto-sans-jp-regular"
+                  >どんな事でお困りですか？</label
+                >
+                <div class="header__input">
+                  <input
+                    type="text"
+                    name="search"
+                    id="search"
+                    class="header__input-search"
+                    placeholder="キーワードを入力"
+                  />
+                  <img
+                    src="./assets/icons/fa-solid fa-magnifying-glass.svg"
+                    alt=""
+                    class="header__input-glass"
+                  />
+                </div>
+              </div>
+              <button class="btn btn--submit noto-sans-jp-regular">検索</button>
+            </div>
+          </header>
+          <main>
+            <section class="hero">
+              <div class="section hero__inner">
+                <figure class="hero__thumb">
+                  <img
+                    src="./assets/images/アートワーク 38.svg"
+                    alt=""
+                    class="hero__image"
+                  />
+                </figure>
+                <div class="hero__content">
+                  <h2 class="section__title hero__title noto-sans-jp-bold">
+                    利用シーン別ガイド
+                  </h2>
+                  <p
+                    class="hero__description section__description noto-sans-jp-regular"
+                  >
+                    SALES
+                    SCOREを様々なシーンでご活用いただく方法をご紹介します。
+                  </p>
+                </div>
+              </div>
+            </section>
+            <section class="feature">
+              <div class="feature__inner">
+                <article class="feature__item">
+                  <figure class="feature__image">
+                    <img
+                      src="./assets/icons/icon-feature-01.svg"
+                      alt="Features"
+                      class="feature__img"
+                    />
+                  </figure>
+                  <div class="feature__content">
+                    <p class="feature__description noto-sans-jp-bold">
+                      受検者の営業活動の特徴を 見える化したい
+                    </p>
+                  </div>
+                </article>
+                <article class="feature__item">
+                  <figure class="feature__image">
+                    <img
+                      src="./assets/icons/icon-feature-02.svg"
+                      alt="Features"
+                      class="feature__img"
+                    />
+                  </figure>
+                  <div class="feature__content">
+                    <p class="feature__description noto-sans-jp-bold">
+                      ポテンシャルの高い人材を 採用したい
+                    </p>
+                  </div>
+                </article>
+                <article class="feature__item">
+                  <figure class="feature__image">
+                    <img
+                      src="./assets/icons/icon-feature-03.svg"
+                      alt="Features"
+                      class="feature__img"
+                    />
+                  </figure>
+                  <div class="feature__content">
+                    <p class="feature__description noto-sans-jp-bold">
+                      離職率を改善したい
+                    </p>
+                  </div>
+                </article>
+                <article class="feature__item">
+                  <figure class="feature__image">
+                    <img
+                      src="./assets/icons/icon-feature-04.svg"
+                      alt="Features"
+                      class="feature__img"
+                    />
+                  </figure>
+                  <div class="feature__content">
+                    <p class="feature__description noto-sans-jp-bold">
+                      成績優秀層を分析したい
+                    </p>
+                  </div>
+                </article>
+                <article class="feature__item">
+                  <figure class="feature__image">
+                    <img
+                      src="./assets/icons/icon-feature-05.svg"
+                      alt="Features"
+                      class="feature__img"
+                    />
+                  </figure>
+                  <div class="feature__content">
+                    <p class="feature__description noto-sans-jp-bold">
+                      自社の特徴を理解したい
+                    </p>
+                  </div>
+                </article>
+                <article class="feature__item">
+                  <figure class="feature__image">
+                    <img
+                      src="./assets/icons/icon-feature-06.svg"
+                      alt="Features"
+                      class="feature__img"
+                    />
+                  </figure>
+                  <div class="feature__content">
+                    <p class="feature__description noto-sans-jp-bold">
+                      社員のコミュニケーションを 改善したい
+                    </p>
+                  </div>
+                </article>
+              </div>
+            </section>
+            <section class="strategy">
+              <div class="strategy__inner section">
+                <figure class="strategy__thumb">
+                  <img
+                    src="./assets/images/アートワーク 8.svg"
+                    alt=""
+                    class="strategy__imagee"
+                  />
+                </figure>
+                <div class="strategy__content section__content">
+                  <h4 class="section__title strategy__title noto-sans-jp-bold">
+                    検査結果画面の解説
+                  </h4>
+                  <p
+                    class="strategy__description section__description noto-sans-jp-regular"
+                  >
+                    SALES SCOREのアウトプット項目について紹介します。
+                  </p>
+                </div>
+              </div>
+              <div class="strategy__list">
+                <div class="strategy__item">
+                  <h3 class="strategy__text noto-sans-jp-bold">
+                    適性検査のアウトプット
+                  </h3>
+                  <div class="strategy__post">
+                    <article class="strategy__post-item">
+                      <div>
+                        <img
+                          src="./assets/icons/strategy-01.svg"
+                          alt=""
+                          class="strategy__post-image"
+                        />
+                      </div>
+                      <p class="strategy__post-description noto-sans-jp-medium">
+                        データサマリー
+                      </p>
+                    </article>
+                    <article class="strategy__post-item">
+                      <div>
+                        <img
+                          src="./assets/icons/strategy-02.svg"
+                          alt=""
+                          class="strategy__post-image"
+                        />
+                      </div>
+                      <p class="strategy__post-description noto-sans-jp-medium">
+                        データ詳細
+                      </p>
+                    </article>
+                    <article class="strategy__post-item">
+                      <div>
+                        <img
+                          src="./assets/icons/strategy-03.svg"
+                          alt=""
+                          class="strategy__post-image"
+                        />
+                      </div>
+                      <p class="strategy__post-description noto-sans-jp-medium">
+                        データ比較
+                      </p>
+                    </article>
+                  </div>
+                </div>
+              </div>
+              <div class="strategy__list">
+                <div class="strategy__item">
+                  <h3 class="strategy__text noto-sans-jp-bold">企業傾向分析</h3>
+                  <div class="strategy__post">
+                    <article class="strategy__post-item">
+                      <div>
+                        <img
+                          src="./assets/icons/Group 47553.svg"
+                          alt=""
+                          class="strategy__post-image"
+                        />
+                      </div>
+                      <p class="strategy__post-description noto-sans-jp-medium">
+                        全体比較
+                      </p>
+                    </article>
+                    <article class="strategy__post-item">
+                      <div>
+                        <img
+                          src="./assets/icons/Group 47556.svg"
+                          alt=""
+                          class="strategy__post-image"
+                        />
+                      </div>
+                      <p class="strategy__post-description noto-sans-jp-medium">
+                        営業タイプ傾向
+                      </p>
+                    </article>
+                    <article class="strategy__post-item">
+                      <div>
+                        <img
+                          src="./assets/icons/Group 47557.svg "
+                          alt=""
+                          class="strategy__post-image"
+                        />
+                      </div>
+                      <p class="strategy__post-description noto-sans-jp-medium">
+                        High-Low分析
+                      </p>
+                    </article>
+                    <article class="strategy__post-item">
+                      <div>
+                        <img
+                          src="./assets/icons/Group 47558.svg"
+                          alt=""
+                          class="strategy__post-image"
+                        />
+                      </div>
+                      <p class="strategy__post-description noto-sans-jp-medium">
+                        構成比比較
+                      </p>
+                    </article>
+                  </div>
+                </div>
+              </div>
+              <div class="strategy__list">
+                <div class="strategy__item">
+                  <h3 class="strategy__text noto-sans-jp-bold">検査結果詳細</h3>
+                  <div class="strategy__post">
+                    <article class="strategy__post-item">
+                      <div>
+                        <img
+                          src="./assets/icons/Group 47565.svg"
+                          alt=""
+                          class="strategy__post-image"
+                        />
+                      </div>
+                      <p class="strategy__post-description noto-sans-jp-medium">
+                        表示される予測値
+                      </p>
+                    </article>
+                    <article class="strategy__post-item">
+                      <div>
+                        <img
+                          src="./assets/icons/Group 47563.svg"
+                          alt=""
+                          class="strategy__post-image"
+                        />
+                      </div>
+                      <p class="strategy__post-description noto-sans-jp-medium">
+                        表示される営業タイプ
+                      </p>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="service">
+              <div class="section service__inner">
+                <figure class="service__thumb">
+                  <img
+                    src="./assets/images/アートワーク 39.png "
+                    alt=""
+                    class="service__image"
+                  />
+                </figure>
+                <div class="service__content">
+                  <h2 class="section__title service__title noto-sans-jp-bold">
+                    利用シーン別ガイド
+                  </h2>
+                  <p
+                    class="section__description service__description noto-sans-jp-regular"
+                  >
+                    SALES
+                    SCOREを様々なシーンでご活用いただく方法をご紹介します。
+                  </p>
+                </div>
+              </div>
+              <section class="service__row">
+                <div class="service__column">
+                  <div class="service__box">
+                    <h3 class="service__text noto-sans-jp-bold">管理者</h3>
+                    <ul class="service__list">
+                      <li class="service__item">
+                        <a href="#" class="service__link noto-sans-jp-medium">
+                          ・管理者の登録・編集
+                        </a>
+                        <a href="#" class="service__link noto-sans-jp-medium">
+                          ・表示される管理者情報
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="service__box">
+                    <h3 class="service__text noto-sans-jp-bold">応募者</h3>
+                    <ul class="service__list">
+                      <li class="service__item">
+                        <a href="#" class="service__link noto-sans-jp-medium">
+                          ・応募者の登録・編集
+                        </a>
+                        <a href="#" class="service__link noto-sans-jp-medium">
+                          ・表示される応募者情報
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="service__box">
+                    <h3 class="service__text noto-sans-jp-bold">適性検査</h3>
+                    <ul class="service__list">
+                      <li class="service__item">
+                        <a href="#" class="service__link noto-sans-jp-medium">
+                          ・適性検査推奨環境
+                        </a>
+                        <a href="#" class="service__link noto-sans-jp-medium">
+                          ・受検メールの送信
+                        </a>
+                        <a href="#" class="service__link noto-sans-jp-medium">
+                          ・ＵＲＬの発行
+                        </a>
+                        <a href="#" class="service__link noto-sans-jp-medium">
+                          ・受検者のステータス
+                        </a>
+                        <a href="#" class="service__link noto-sans-jp-medium">
+                          ・検査実施項目
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="service__box">
+                    <h3 class="service__text noto-sans-jp-bold">
+                      契約について
+                    </h3>
+                    <ul class="service__list">
+                      <li class="service__item">
+                        <a href="#" class="service__link noto-sans-jp-medium">
+                          ・契約情報の確認
+                        </a>
+                        <a href="#" class="service__link noto-sans-jp-medium">
+                          ・解約の方法
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="service__column">
+                  <div class="service__box">
+                    <h3 class="service__text noto-sans-jp-bold">従業員</h3>
+                    <ul class="service__list">
+                      <li class="service__item">
+                        <a href="#" class="service__link noto-sans-jp-medium">
+                          ・従業員の登録・編集
+                        </a>
+                        <a href="#" class="service__link noto-sans-jp-medium">
+                          ・表示される従業員情報
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="service__box">
+                    <h3 class="service__text noto-sans-jp-bold">
+                      実績データの登録
+                    </h3>
+                    <ul class="service__list">
+                      <li class="service__item">
+                        <a href="#" class="service__link noto-sans-jp-medium">
+                          ・実績の登録・編集
+                        </a>
+                        <a href="#" class="service__link noto-sans-jp-medium">
+                          ・分析対象範囲の指定
+                        </a>
+                        <a href="#" class="service__link noto-sans-jp-medium">
+                          ・成績区分の指定
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="service__box">
+                    <h3 class="service__text noto-sans-jp-bold">
+                      ダッシュボード機能
+                    </h3>
+                    <ul class="service__list">
+                      <li class="service__item">
+                        <a href="#" class="service__link noto-sans-jp-medium">
+                          ・実績データ分析機能
+                        </a>
+                        <a href="#" class="service__link noto-sans-jp-medium">
+                          ・運用サポート機能
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+            </section>
+          </main>
+        </section>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer__inner">
+        <p class="footer__copyright noto-sans-jp-regular">
+          Copyright © 2022 SALES SCORE All Right Reserved.
+        </p>
+      </div>
+    </footer>
+    <div class="go-to-top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </div>
+    <div class="overlay"></div>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

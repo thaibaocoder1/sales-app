@@ -1,0 +1,10 @@
+@mixin maxWidth($breakpoint) {
+  @media only screen and (max-width: $breakpoint) {
+    @content;
+  }
+}
+@mixin phoneMaxWidth {
+  @media only screen and (max-width: 359.98px) {
+    @content;
+  }
+}

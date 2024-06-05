@@ -1,0 +1,19 @@
+@use "../abstracts/variables" as modules;
+@use "../abstracts/mixins" as mixins;
+
+.footer {
+  margin-top: 15.292rem;
+  padding: 2.8rem 0;
+  text-align: center;
+  background-color: modules.$text-primary-color;
+  &__copyright {
+    color: #fff;
+    font-size: 1.2rem;
+  }
+  @include mixins.maxWidth(767.98px) {
+    margin-top: 6rem;
+  }
+  @include mixins.maxWidth(399.98px) {
+    margin-top: 3rem;
+  }
+}

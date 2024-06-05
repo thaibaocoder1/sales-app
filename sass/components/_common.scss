@@ -1,0 +1,12 @@
+@use "../abstracts/variables" as modules;
+.section {
+  display: flex;
+  align-items: center;
+  &__title {
+    color: modules.$primary-color;
+  }
+  &__description {
+    font-size: 1.6rem;
+    line-height: 1.42;
+  }
+}

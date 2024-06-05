@@ -1,0 +1,74 @@
+@use "../abstracts/variables" as modules;
+@use "../abstracts/mixins" as mixins;
+
+.sidebar {
+  width: 22rem;
+  border: 2px solid modules.$border-primary-color;
+  background-color: #fff;
+  height: max-content;
+  transition: top 0.25s ease;
+  position: sticky;
+  top: 1rem;
+  left: 0;
+  right: 0;
+  &__inner {
+    width: 100%;
+    background-color: #fff;
+  }
+  &__top {
+    padding-top: 3rem;
+    text-align: center;
+  }
+  &__logo {
+    margin-bottom: 17.86px;
+  }
+  // Responsive
+  @include mixins.maxWidth(1023.98px) {
+    width: 30rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 100;
+    margin-right: 0;
+    transform: translateX(-200%);
+    box-shadow: 0 4px 6px rgba($color: #000000, $alpha: 0.3);
+    transition: all 0.25s ease;
+  }
+  @include mixins.phoneMaxWidth() {
+    width: 20rem;
+  }
+}
+
+.navbar {
+  margin-top: 2.7rem;
+  &__item {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2.5rem;
+    border: 1px solid;
+    border-color: modules.$border-primary-color transparent;
+    cursor: pointer;
+    &:last-child {
+      border: none;
+    }
+  }
+  &__link {
+    font-size: 1.6rem;
+  }
+  // Responsive
+  @include mixins.maxWidth(1023.98px) {
+    &__item {
+      &:last-child {
+        border: 1px solid;
+        border-color: modules.$border-primary-color transparent;
+      }
+    }
+  }
+  @include mixins.phoneMaxWidth() {
+    &__item {
+      padding: 1.5rem;
+    }
+  }
+}
